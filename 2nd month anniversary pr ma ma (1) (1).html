@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="my">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>For My Ma Ma 🤍😾</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;
+background:radial-gradient(circle at 50% 35%,#fff5f8,#ffd8e5 55%,#e6aec3);
+font-family:Georgia,"Noto Serif Myanmar","Myanmar Text",serif;color:#542536;overflow:hidden}
+.wrap{width:min(94vw,720px);text-align:center}
+.hint{margin-bottom:15px;color:#7b4055;font-size:15px}
+.env{position:relative;width:min(88vw,570px);height:390px;margin:auto;cursor:pointer}
+.box{position:absolute;left:0;right:0;bottom:20px;height:285px;background:#f2b9cd;border-radius:8px;
+box-shadow:0 22px 50px #71364b44}
+.box:before,.box:after{content:"";position:absolute;inset:0}
+.box:before{background:linear-gradient(135deg,transparent 49.5%,#e6a5bb 50%,transparent 50.5%)}
+.box:after{background:linear-gradient(225deg,transparent 49.5%,#e3a0b6 50%,transparent 50.5%)}
+.flap{position:absolute;top:0;left:0;width:100%;height:195px;background:#f8cad8;
+clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:top;transition:1s;z-index:5}
+.seal{position:absolute;top:145px;left:50%;transform:translateX(-50%);width:60px;height:60px;
+border-radius:50%;background:#b83c61;color:#fff;display:grid;place-items:center;font-size:28px;
+z-index:8;transition:.4s;box-shadow:0 5px 12px #71364b55}
+.label{position:absolute;top:208px;width:100%;font-family:"Brush Script MT",cursive;font-size:28px;
+color:#8b304d;z-index:7;transition:.4s}
+.letter{position:absolute;z-index:3;left:4%;width:92%;height:350px;top:10px;background:#fffaf5;
+border-radius:6px;padding:25px 25px;overflow:auto;text-align:left;box-shadow:0 8px 25px #52253633;
+opacity:0;transform:translateY(85px);transition:1s}
+.letter h1{text-align:center;color:#a33355;font-size:30px;margin:0 0 7px}
+.name{text-align:center;font-size:25px;font-weight:bold;margin-bottom:18px}
+.letter p{white-space:pre-wrap;font-size:16px;line-height:1.9;margin:0}
+.ending{margin-top:24px;text-align:center;font-weight:bold;font-size:18px;line-height:1.8}
+.open .flap{transform:rotateX(180deg);z-index:2}
+.open .seal,.open .label{opacity:0}
+.open .letter{opacity:1;transform:translateY(0);z-index:9}
+@media(max-width:600px){.env{height:350px}.box{height:265px}.letter{height:320px;padding:20px 17px}
+.letter p{font-size:14px;line-height:1.75}.letter h1{font-size:26px}.name{font-size:22px}}
+.ambient,.sparkles{position:fixed;inset:0;pointer-events:none;overflow:hidden}
+.ambient span,.sparkles span{position:absolute;bottom:-50px;opacity:0;animation:rise linear infinite}
+.ambient span{font-size:18px;filter:drop-shadow(0 3px 5px #b83c6140)}
+.sparkles span{font-size:14px;color:#fff6fb;text-shadow:0 0 10px #fff}
+@keyframes rise{
+0%{transform:translateY(0) scale(.7) rotate(0deg);opacity:0}
+12%{opacity:.75}50%{opacity:.9}
+100%{transform:translateY(-115vh) scale(1.15) rotate(25deg);opacity:0}
+}
+@keyframes twinkle{
+0%,100%{transform:scale(.4) rotate(0deg);opacity:0}
+45%{transform:scale(1.2) rotate(25deg);opacity:1}
+70%{transform:scale(.7) rotate(60deg);opacity:.4}
+}
+.sparkles span{bottom:auto;animation:twinkle 3.5s ease-in-out infinite}
+.env:after{content:"";position:absolute;inset:-35px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.32),transparent 65%);filter:blur(12px);animation:glow 3s ease-in-out infinite;z-index:-1}
+@keyframes glow{0%,100%{opacity:.35;transform:scale(.94)}50%{opacity:.75;transform:scale(1.05)}}
+.seal{animation:pulse 2.2s ease-in-out infinite}
+@keyframes pulse{0%,100%{box-shadow:0 5px 12px #71364b55,0 0 0 0 #b83c6133}50%{box-shadow:0 5px 18px #71364b66,0 0 0 12px #b83c6100}}
+.open .seal{animation:none}
+
+/* Deluxe romantic effects */
+body::before {
+  content: "";
+  position: fixed;
+  inset: -30%;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255,255,255,.28), transparent 18%),
+    radial-gradient(circle at 80% 30%, rgba(255,170,210,.18), transparent 20%),
+    radial-gradient(circle at 50% 85%, rgba(255,220,235,.22), transparent 24%);
+  animation: dreamyDrift 12s ease-in-out infinite alternate;
+  z-index: 0;
+}
+
+.container {
+  animation: pageBreath 5s ease-in-out infinite;
+}
+
+.envelope-wrap {
+  animation: gentleFloat 4s ease-in-out infinite;
+}
+
+.env {
+  box-shadow:
+    0 28px 65px rgba(190, 74, 125, .20),
+    0 0 0 1px rgba(255,255,255,.45) inset;
+}
+
+.env::before {
+  content: "";
+  position: absolute;
+  inset: -18px;
+  border-radius: 24px;
+  background: conic-gradient(
+    from 0deg,
+    transparent,
+    rgba(255,255,255,.65),
+    transparent 25%,
+    rgba(255,160,205,.30),
+    transparent 55%,
+    rgba(255,255,255,.55),
+    transparent 80%
+  );
+  filter: blur(14px);
+  opacity: .55;
+  z-index: -1;
+  animation: haloSpin 9s linear infinite;
+}
+
+.seal {
+  box-shadow:
+    0 7px 18px rgba(145, 37, 82, .25),
+    0 0 0 5px rgba(255,255,255,.28),
+    0 0 28px rgba(255, 110, 170, .55);
+}
+
+.seal::after {
+  content: "♡";
+  position: absolute;
+  inset: -14px;
+  display: grid;
+  place-items: center;
+  color: rgba(255,255,255,.6);
+  font-size: 12px;
+  animation: orbitHeart 3s ease-in-out infinite;
+}
+
+.label {
+  text-shadow: 0 1px 8px rgba(255,255,255,.55);
+}
+
+.hint {
+  animation: hintGlow 2.8s ease-in-out infinite;
+}
+
+.open .envelope-wrap {
+  animation: openedFloat 5s ease-in-out infinite;
+}
+
+.open .env {
+  box-shadow:
+    0 35px 90px rgba(190, 74, 125, .28),
+    0 0 55px rgba(255, 150, 205, .22);
+}
+
+@keyframes gentleFloat {
+  0%,100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-7px) rotate(.35deg); }
+}
+
+@keyframes openedFloat {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+@keyframes dreamyDrift {
+  from { transform: translate3d(-1%, -1%, 0) scale(1); }
+  to { transform: translate3d(1.5%, 1%, 0) scale(1.04); }
+}
+
+@keyframes pageBreath {
+  0%,100% { filter: drop-shadow(0 0 0 rgba(255,150,205,0)); }
+  50% { filter: drop-shadow(0 0 18px rgba(255,150,205,.10)); }
+}
+
+@keyframes haloSpin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes orbitHeart {
+  0%,100% { transform: translateY(0) scale(.9); opacity: .35; }
+  50% { transform: translateY(-4px) scale(1.15); opacity: .8; }
+}
+
+@keyframes hintGlow {
+  0%,100% { opacity: .68; }
+  50% { opacity: 1; text-shadow: 0 0 14px rgba(255,120,180,.32); }
+}
+
+/* Tiny falling petals */
+.petal-layer {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 2;
+}
+.petal {
+  position: absolute;
+  top: -30px;
+  font-size: 14px;
+  opacity: .65;
+  animation: petalFall linear infinite;
+}
+@keyframes petalFall {
+  0% { transform: translate3d(0,-30px,0) rotate(0deg); opacity: 0; }
+  12% { opacity: .75; }
+  50% { transform: translate3d(45px,50vh,0) rotate(150deg); }
+  100% { transform: translate3d(-35px,110vh,0) rotate(330deg); opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.anniversary-badge {
+  position: relative;
+  z-index: 4;
+  margin: 0 auto 14px;
+  width: fit-content;
+  padding: 7px 14px;
+  border: 1px solid rgba(180,70,120,.16);
+  border-radius: 999px;
+  background: rgba(255,255,255,.38);
+  backdrop-filter: blur(8px);
+  color: #a84d76;
+  font-size: 10px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  animation: badgePulse 3.2s ease-in-out infinite;
+}
+.anniversary-badge span { letter-spacing: 0; margin: 0 4px; }
+@keyframes badgePulse {
+  0%,100% { transform: scale(1); box-shadow: 0 0 0 rgba(220,100,150,0); }
+  50% { transform: scale(1.035); box-shadow: 0 0 24px rgba(220,100,150,.12); }
+}
+
+/* Premium envelope styling */
+.envelope-wrap {
+  perspective: 1100px;
+}
+
+.env {
+  position: relative;
+  overflow: visible !important;
+  border: 1px solid rgba(255,255,255,.72) !important;
+  background:
+    linear-gradient(145deg, rgba(255,255,255,.45), transparent 28%),
+    linear-gradient(155deg, #ffdce9 0%, #f8b8d0 48%, #ee9fbd 100%) !important;
+  box-shadow:
+    0 28px 65px rgba(190,74,125,.20),
+    inset 0 1px 0 rgba(255,255,255,.8),
+    inset 0 -8px 18px rgba(173,56,105,.10) !important;
+}
+
+/* Inner paper texture */
+.env::before {
+  content: "";
+  position: absolute;
+  inset: 7px;
+  border-radius: 17px;
+  border: 1px solid rgba(255,255,255,.42);
+  background:
+    repeating-linear-gradient(
+      0deg,
+      rgba(255,255,255,.045) 0px,
+      rgba(255,255,255,.045) 1px,
+      transparent 1px,
+      transparent 5px
+    );
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Soft decorative corner seals */
+.env::after {
+  content: "✦   ♡   ✦";
+  position: absolute;
+  left: 50%;
+  bottom: 13px;
+  transform: translateX(-50%);
+  color: rgba(255,255,255,.62);
+  font-size: 10px;
+  letter-spacing: 5px;
+  white-space: nowrap;
+  z-index: 3;
+  filter: drop-shadow(0 1px 2px rgba(140,40,85,.14));
+}
+
+/* Ribbon running across the envelope */
+.env .ribbon {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 34px;
+  transform: translateX(-50%);
+  background: linear-gradient(
+    90deg,
+    rgba(255,255,255,.12),
+    rgba(255,255,255,.42),
+    rgba(255,255,255,.12)
+  );
+  border-left: 1px solid rgba(255,255,255,.28);
+  border-right: 1px solid rgba(190,65,115,.13);
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Ribbon bow */
+.env .ribbon::before,
+.env .ribbon::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 39px;
+  height: 27px;
+  border-radius: 60% 25% 60% 25%;
+  background: linear-gradient(135deg, #d95c8d, #f09abd);
+  box-shadow: 0 4px 10px rgba(140,35,80,.16);
+}
+.env .ribbon::before {
+  right: 11px;
+  transform: translateY(-50%) rotate(-25deg);
+}
+.env .ribbon::after {
+  left: 11px;
+  transform: translateY(-50%) rotate(25deg);
+}
+
+/* Add a subtle card edge behind the letter */
+.letter {
+  border: 1px solid rgba(190,75,125,.12) !important;
+  box-shadow:
+    0 18px 45px rgba(150,50,100,.16),
+    inset 0 0 35px rgba(255,220,235,.24) !important;
+}
+
+/* Make seal more luxurious */
+.seal {
+  background:
+    radial-gradient(circle at 35% 28%, #ffb5d2, #df5d91 48%, #b93c70 100%) !important;
+  border: 3px solid rgba(255,255,255,.68) !important;
+  box-shadow:
+    0 7px 18px rgba(145,37,82,.28),
+    0 0 0 5px rgba(255,255,255,.25),
+    0 0 30px rgba(255,110,170,.55),
+    inset 0 2px 5px rgba(255,255,255,.35) !important;
+}
+
+.seal span,
+.seal {
+  text-shadow:
+    0 1px 0 rgba(120,30,70,.2),
+    0 0 8px rgba(255,255,255,.3);
+}
+
+/* Little corner hearts */
+.env .corner-heart {
+  position: absolute;
+  color: rgba(255,255,255,.72);
+  font-size: 15px;
+  z-index: 4;
+  text-shadow: 0 2px 5px rgba(140,40,85,.12);
+  animation: cornerHeart 3s ease-in-out infinite;
+}
+.env .corner-heart.one { top: 15px; left: 17px; }
+.env .corner-heart.two { top: 15px; right: 17px; animation-delay: .8s; }
+.env .corner-heart.three { bottom: 17px; left: 18px; animation-delay: 1.5s; }
+.env .corner-heart.four { bottom: 17px; right: 18px; animation-delay: 2.2s; }
+
+@keyframes cornerHeart {
+  0%,100% { transform: translateY(0) rotate(-8deg); opacity: .58; }
+  50% { transform: translateY(-4px) rotate(8deg); opacity: .95; }
+}
+
+/* Keep the flap visually elegant */
+.flap {
+  filter: drop-shadow(0 3px 5px rgba(145,45,90,.12));
+}
+
+/* Envelope label as a tiny stationery tag */
+.label {
+  background: rgba(255,255,255,.16);
+  padding: 5px 10px;
+  border-radius: 999px;
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255,255,255,.24);
+}
+
+/* Toggle Button Styling */
+.toggle-btn {
+  margin-top: 18px;
+  background: linear-gradient(135deg, #d95c8d, #b83c61);
+  color: #fff;
+  border: none;
+  padding: 10px 22px;
+  font-family: Georgia, serif;
+  font-size: 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(184,60,97,0.3);
+  transition: transform 0.2s, background 0.2s;
+  z-index: 10;
+  position: relative;
+}
+.toggle-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #e06c99, #c7486e);
+}
+.toggle-btn:active {
+  transform: scale(0.98);
+}
+</style>
+</head>
+<body>
+<div class="ambient" id="ambient"></div>
+
+<div class="petal-layer" aria-hidden="true">
+  <span class="petal" style="left:8%;animation-duration:10s;animation-delay:0s;">🌸</span>
+  <span class="petal" style="left:19%;animation-duration:13s;animation-delay:3s;">♡</span>
+  <span class="petal" style="left:34%;animation-duration:11s;animation-delay:1s;">🌷</span>
+  <span class="petal" style="left:52%;animation-duration:14s;animation-delay:5s;">✿</span>
+  <span class="petal" style="left:68%;animation-duration:12s;animation-delay:2s;">🌸</span>
+  <span class="petal" style="left:83%;animation-duration:15s;animation-delay:6s;">♡</span>
+  <span class="petal" style="left:94%;animation-duration:11s;animation-delay:4s;">🌷</span>
+</div>
+
+<div class="sparkles" id="sparkles"></div>
+<div class="wrap">
+<div class="hint" id="hint">Tap the envelope or button to open your letter 💌</div>
+<div class="envelope-wrap">
+  <div class="env" id="env">
+    <div class="box">
+      <div class="letter">
+        <h1>My Dearest Ma Ma,</h1>
+        <div class="name">ℳ𝒶 ℳ𝒶 🤍😾</div>
+        <p>မမ… ✨
+
+ဒီနေ့ဆိုရင် မောင်တို့နှစ်ယောက် အတူတူ တွဲလာတာ ၂ လပြည့်ပြီနော်။ 🥺❤️
+
+အချိန်တွေက ဘယ်လောက်တောင် မြန်လိုက်သလဲမသိဘူး။ မောင် မမကို တိတ်တိတ်လေး သဘောကျခဲ့တဲ့အချိန်တွေ၊ မမနဲ့ ပိုနီးစပ်လာဖို့ မျှော်လင့်ခဲ့တဲ့အချိန်တွေကနေ အခုလို မမကို တကယ်ချစ်ရတဲ့သူတစ်ယောက်အဖြစ် ပိုင်ဆိုင်ခွင့်ရလာတာကို တစ်ခါတလေ မောင်ကိုယ်တိုင်တောင် မယုံနိုင်သေးဘူး။ 🤍
+
+မောင်တို့ရဲ့ ပထမဆုံး ၁ လပြည့်တုန်းကလည်း မမအတွက် စာရေးခဲ့တယ်။ အဲ့ဒီအချိန်မှာ မောင်ရဲ့စိတ်ထဲမှာ ရှိသမျှကို စကားလုံးတွေနဲ့ ဖော်ပြဖို့ကြိုးစားခဲ့တယ်။ ဒါပေမယ့် အခု ၂ လပြည့်လာတဲ့အချိန်မှာတော့ မောင်သိလာတာတစ်ခုရှိတယ်—
+
+ဒီ ၂ လအတွင်း မမနဲ့အတူ ရယ်ခဲ့တာတွေရှိတယ်၊ စကားပြောခဲ့တာတွေရှိတယ်၊ တစ်ခါတလေ စိတ်ကောက်တာတွေ၊ နားလည်မှုလွဲတာတွေလည်း ရှိခဲ့တယ်။ ဒါပေမယ့် အဲ့ဒီအရာတွေအားလုံးက မောင်တို့နှစ်ယောက်ကို ပိုနားလည်လာစေခဲ့တယ်လို့ မောင်ထင်တယ်။
+
+မမရဲ့ message တစ်ကြောင်း မမရဲ့ အသံလေးတစ်ချက်၊ မမရဲ့ “မောင်” လို့ခေါ်လိုက်တဲ့ စကားလေးတစ်ခွန်းတောင် မောင်ရဲ့နေ့တစ်နေ့ကို ပြောင်းလဲပေးနိုင်တယ်။ တစ်ခါတလေ မမမသိဘဲ မောင်က မမပြောခဲ့တဲ့ စကားလေးတွေကို ပြန်တွေးပြီး ပြုံးနေမိတတ်တယ်။ 🥹
+
+မမက မောင့်အတွက်တော့ ရင်ထဲမှာ ချစ်စရာအကောင်းဆုံးနဲ့ perfect ပါဘဲ
+
+မောင် မမကို ချစ်မိတာက မမ က လှလွန်းလို့ perfect ဖြစ်လို့မဟုတ်ဘူး။
+
+မမဖြစ်နေလို့ကို မောင်ချစ်တာ။ ❤️
+
+မမရဲ့ အပြုံးလေး၊ စိတ်ကောက်တတ်တာလေး၊ ချစ်စရာကောင်းတဲ့အကျင့်လေးတွေ၊ တစ်ခါတလေ မောင်ကို စိတ်ရှုပ်အောင်လုပ်တတ်တာလေးတွေတောင် မောင့်အတွက် မမရဲ့အစိတ်အပိုင်းလေးတွေ ဖြစ်နေပြီ။
+
+မောင်မမကို စတွေ့ကတည်းက သဘောကျခဲ့တာက အချိန်တစ်နှစ်ကျော်ကြာခဲ့ပေမယ့်၊ မမနဲ့ တကယ် relationship တစ်ခုတည်ဆောက်လာတဲ့ ဒီ ၂ လကတော့ မောင့်အတွက် အထူးခြားဆုံးအချိန်တွေထဲက တစ်ခုပါ။ 🫂
+
+မမက မောင့်ရဲ့ girlfriend ဖြစ်လာတာထက်ပိုတယ်။
+
+မမက မောင့်နေ့ရက်တွေထဲက အလှဆုံးအပိုင်းလေးတစ်ခု ဖြစ်လာတာပါ။
+
+မောင်တို့ရှေ့မှာ ဘယ်လောက်ကြာကြာ အတူတူလျှောက်ရမလဲ မသိသေးပေမယ့် မောင်သိတာတစ်ခုတော့ရှိတယ်။ မောင်က မမနဲ့အတူ ရှိနေတဲ့အချိန်တိုင်းကို တန်ဖိုးထားချင်တယ်။ မမဝမ်းနည်းတဲ့နေ့တွေတိုင်းမှာ မမဘေးနားမှာ မောင်အမြဲမှာရှိချင်တယ်။
+
+မောင်က perfect boyfriend တစ်ယောက်မဟုတ်ပါဘူး။ တစ်ခါတလေကျ မမကို စိတ်ပျက်စေတယ်၊ စိတ်ဆိုးစေတယ်၊ မသိလိုက်ဘဲ မမကို နာကျင်စေတယ်။ ဒါပေမယ့် မောင်က မမကို ပေါ့ပေါ့တန်တန် မချစ်ဘူးဆိုတာ မဟုတ်ဘဲ မမကို အရမ်းချစ်လွန်းလို့ဆိုတာ မမကို သိစေချင်လို့ပါနော်။
+
+၂ လဆိုတာ တချို့လူတွေအတွက် အချိန်တိုလေးတစ်ခု ဖြစ်ပေမယ့် မောင့်အတွက်တော့ မမနဲ့အတူရှိခဲ့တဲ့ နေ့ရက်တိုင်းက အပျော်ဆုံးပါဘဲ။
+
+ဒီနေ့ကစပြီး နောက်ထပ် ၃ လ၊ ၆ လ၊ ၁ နှစ်၊ ၂ နှစ်… ဘယ်လောက်ပဲကြာကြာ မောင်တို့နှစ်ယောက် အခက်အခဲတွေမရှိဘဲ နေကြမယ်နော်။ အခက်အခဲတွေရှိလာရင်လည်း တစ်ယောက်ကိုတစ်ယောက် လက်မလွှတ်ဘဲ ဖြတ်ကျော်နိုင်အောင် လုပ်ကြမယ်နော်။🫶🏻
+
+မမကို မောင့်ဘဝထဲ ဝင်လာပေးခဲ့တာအတွက် ရော မောင့်ကို ချစ်ပေးတာတွေအတွက်ရော မောင့်ကို နားလည်ပေးတာတွေ အတွက် မမကို ကျေးဇူးတင်ပါတယ်နော် မမ။
+
+ပြီးတော့—
+
+မောင် မမကို မနေ့ကထက် ဒီနေ့ပိုချစ်တယ်။
+
+ဒီနေ့ထက် မနက်ဖြန်ပိုချစ်မယ်။</p>
+        <div class="ending">Happy 2nd Month Anniversary, မမ 💗</div>
+      </div>
+      <div class="flap"></div>
+      <div class="label">For my beloved Ma Ma 🤍</div>
+      <div class="seal">♥</div>
+    </div>
+  </div>
+</div>
+<button class="toggle-btn" id="toggleBtn">Open Envelope 💌</button>
+</div>
+
+<script>
+const env = document.getElementById("env");
+const toggleBtn = document.getElementById("toggleBtn");
+const hint = document.getElementById("hint");
+
+function toggleEnvelope() {
+  const isOpen = env.classList.toggle("open");
+  if (isOpen) {
+    hint.textContent = "Opened with love, Arthur 🤍";
+    toggleBtn.textContent = "Close Envelope 🔒";
+  } else {
+    hint.textContent = "Tap the envelope or button to open your letter 💌";
+    toggleBtn.textContent = "Open Envelope 💌";
+  }
+}
+
+// Allow clicking either the envelope or the button to toggle open/close anytime
+env.onclick = toggleEnvelope;
+toggleBtn.onclick = (e) => {
+  e.stopPropagation(); // Prevent triggering env.onclick twice
+  toggleEnvelope();
+};
+</script>
+
+<script>
+const ambient=document.getElementById("ambient");
+const sparkleBox=document.getElementById("sparkles");
+const symbols=["♥","♡","💗","🌸","💕"];
+for(let i=0;i<18;i++){
+  const s=document.createElement("span");
+  s.textContent=symbols[i%symbols.length];
+  s.style.left=(Math.random()*100)+"%";
+  s.style.animationDuration=(7+Math.random()*7)+"s";
+  s.style.animationDelay=(Math.random()*9)+"s";
+  s.style.fontSize=(12+Math.random()*14)+"px";
+  ambient.appendChild(s);
+}
+for(let i=0;i<24;i++){
+  const s=document.createElement("span");
+  s.textContent=["✦","✧","·","⋆"][i%4];
+  s.style.left=(5+Math.random()*90)+"%";
+  s.style.top=(5+Math.random()*85)+"%";
+  s.style.animationDelay=(Math.random()*4)+"s";
+  s.style.animationDuration=(2.5+Math.random()*2)+"s";
+  s.style.fontSize=(9+Math.random()*13)+"px";
+  sparkleBox.appendChild(s);
+}
+</script>
+</body>
+</html>
